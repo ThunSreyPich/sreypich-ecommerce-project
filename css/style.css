@@ -1,0 +1,36 @@
+/* logo */
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+.menu{
+    display: flex;
+    background: rgb(187, 206, 194);
+}
+.logo img{
+    width: 40%;
+    margin-top: -26px;
+}
+.search  .right-menu  {
+    display: flex;
+}
+.search input{
+    display: flex;
+    justify-self: right;
+    width:350%;
+    height: 20%;
+    margin-top: 50px;
+    margin-left: -100%;
+}
+.search 
+.material-icons{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -15%;
+    margin-right: -150%;
+}
+.right-menu button {
+    /* display: flex; */
+    align-items: flex-end;
+    
+}
