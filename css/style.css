@@ -67,19 +67,42 @@ body{
 
 
      /* PRODUCT--------------- */
-.product{
+/* .product{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     box-flex-group: rgb(26, 26, 44);
     margin-right:-80px;
     margin-top: 70px;
-   
+    width: 30%;
+ 
+} */
+/* .picture{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-flex-group: rgb(26, 26, 44);
+    margin-top: 70px; 
+ 
+} */
+
+.picture{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+    flex-direction: column;
+    border-radius: 8px;
+}
+.group-picture{
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
 }
 .picture img{
-    display: flex;
-    justify-items: start;
-    width: 80%;
+    width: 70%;
     border-radius: 20px;
     background-image: linear-gradient(rgb(227, 122, 122),rgb(235, 82, 82));
     box-shadow: rgba(0, 0, 0, 0.35) 5px 15px 5px;
