@@ -2,10 +2,11 @@
 body{
     font-family: sans-serif;
     margin: 0;
+    background-image: linear-gradient(rgb(232, 90, 90),rgb(225, 33, 33));
 }
 .menu{
     display: flex;
-    background: rgb(187, 206, 194);
+    background: rgb(232, 96, 132);
 }
 .logo img{
     width: 40%;
@@ -29,8 +30,71 @@ body{
     margin-top: -15%;
     margin-right: -150%;
 }
-.right-menu button {
-    /* display: flex; */
-    align-items: flex-end;
+.right-menu  {
+    display: flex;
+    flex-direction: row;
+    height: 30%;
+    margin-left: 400px; 
+    margin-top: 20px;
+}
+.right-menu button i {
+    padding: 10px;
+    margin: 20px;
+    width: 30%;
     
 }
+.right-menu  :hover{
+    background-color: orange;
+    border: none;
+}
+.sell-or-buy {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: rgb(197, 81, 122);
+    padding: 20px;
+}
+.sell-or-buy button {
+   padding: 10px;
+   border-radius: 10px;
+   text-decoration: none;
+}
+.sell-or-buy a {
+    text-decoration: none;
+}
+.sell-or-buy :hover{
+    background-color: orange;
+    border: none;
+}
+
+
+     /* PRODUCT--------------- */
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-flex-group: rgb(26, 26, 44);
+    margin-right:-80px;
+    margin-top: 70px;
+   
+}
+.picture img{
+    display: flex;
+    justify-items: start;
+    width: 80%;
+    border-radius: 20px;
+    background-image: linear-gradient(rgb(227, 122, 122),rgb(235, 82, 82));
+    box-shadow: rgba(0, 0, 0, 0.35) 5px 15px 5px;
+    margin: 10px;
+}
+
+       /* Footer */
+footer{
+    background-color: rgb(197, 209, 229);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer a p {
+    margin-top: 20px;
+}
+    
