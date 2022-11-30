@@ -76,6 +76,15 @@ form  button{
     border-radius: 15px;
     margin-top: 40px;
 }
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.button a {
+    text-decoration: none;
+}
 button:hover{
  background-color: orange;
  border: none;
