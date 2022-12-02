@@ -53,16 +53,17 @@ function createNewRecord(name, price, currency, description, image,action) {
 
         //------------------for  edit   image--------------
     editIcon.addEventListener('click',(e)=>{
-        let productToEdit = e.target.parentElement.parentElement.dataset.index;
-
+        let index = e.target.parentElement.parentElement.dataset.index;
         
         document.getElementById("product-name").value = name;
         document.getElementById("product-price").value = price;
         document.getElementById("description").value = description;
         document.getElementById("currency").value= currency;
         document.getElementById("image").value = image;
-   
-
+        
+        productList.splice(index,1)
+        
+        
     })
         
 
