@@ -31,6 +31,7 @@ function createCard(title, price, currency, description, image){
 
     card.appendChild(titleElement);
     card.appendChild(cardBody);
+    console.log(card)
  
     return card;
 }
@@ -46,3 +47,26 @@ function displayProduct() {
 
 const container = document.querySelector("#container");
 document.addEventListener("DOMContentLoaded", () => { displayProduct() });
+
+
+
+        // --------------------------find by search-----------------------------
+
+function searchProduct(){
+    let word = search.value.toLowerCase()
+    let tasks = document.querySelectorAll(".card")
+    console.log(tasks)
+    for (let task of tasks) {
+        let title = task.firstElementChild.textContent.toLowerCase()
+        if (title.indexOf(word) === -1){
+            task.style.display = "none"
+        }
+        else{
+            task.style.display = "flex"
+        }
+    }
+
+}
+
+const text = document.querySelector("#search");
+search.addEventListener("keyup", searchProduct);
