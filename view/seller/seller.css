@@ -1,44 +1,4 @@
 
-                           /* ===================FORM======================== */
-/* h2{
-    display: flex;
-    justify-content: center;
-}
- form {
-    margin-top: 90px;
-    margin-left: -60px;
-} 
- .input .choose-img input {
-    border: 1px solid black;
-    background-color: white;
-}
-input {
-    margin: 10px;
-    padding: 10px;
-    width: 20%;
-    margin-left: 30px;
-    width: 80%;
-}
-.image input {
-    border: 1px solid black;
-}
-form  button{
-    width: 30%;
-    padding: 10px;
-    border-radius: 15px;
-    margin-top: 40px;
-}
-.button{
-    width: 50%;
-}
-.button a {
-    text-decoration: none;
-}
-button:hover{
- background-color: orange;
- border: none;
- color: white;
-}   */
 
 
 /* _______________TABLE____________________ */
@@ -47,20 +7,25 @@ button:hover{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    line-height: 1.5;
+    /* line-height: 1.5; */
     text-decoration: none;
     list-style: none;
 }
-.container {
+h1{
     display: flex;
-    width: 90%;
-    margin: 0 auto;
+    justify-content: center;
+    color: white;
+    padding: 10px;
+    background-color: lightcoral;
+
 }
 form {
-    margin-top:90px ;
+    flex: 1;
+    margin-top:50px ;
+    margin-left: 20px;
 } 
 input{
-    width: 70%;
+    flex: 1;
     padding: 10px;
 }
 .form-add {
@@ -68,14 +33,15 @@ input{
     padding: 10px;
 }
 .table-data {
-    flex: 2;
+    flex: 1;
     padding: 10px;
 }
 table {
-    width: 80%;
+    flex: 2;
+    width: 65%;
+    margin-left: 430px;
     border-collapse: collapse;
-    margin-left: 160px;
-    margin-top: 120px;
+    margin-top: -370px;
 }
 tr,td, th {
     border: 2px solid rgb(13, 4, 4);
@@ -83,14 +49,13 @@ tr,td, th {
 }
 th {
     background-color: lightcoral;
-    color: white;
+    color: rgb(211, 16, 16);
 }
 tr:hover{
     background-color: orange;
     color: white;
 }
 .button button  {
-    width: 25%;
     margin: 15px;
     padding: 5px;
     margin-left: -0px;
@@ -102,17 +67,9 @@ form a {
     background-color: lightblue;
 }
 
-       /* Footer */
-/* footer{
-margin-top: 50px ;
-background-color: rgb(208, 169, 52);
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-margin-bottom: -30px;
-    }
-footer a p {
-margin-top: 20px; 
-} */
+
+            /* ---------------------- Edit-and-delete-----------------------  */
+.delete, .edit {
+    width: 40%;
+}
 
