@@ -8,9 +8,10 @@ function getProductFromLocalStorage(key) {
 }
             // ------------for create Table(td)---------------
 
-function createNewRecord(name, price, currency, description, image,action) {
+function createNewRecord(index, name, price, currency, description, image,action) {
 
     const tr = document.createElement("tr");
+    tr.dataset.index = index;
     const tdOne = document.createElement("td");
     const tdTwo = document.createElement("td");
     const tdThree = document.createElement("td");
@@ -54,7 +55,6 @@ function createNewRecord(name, price, currency, description, image,action) {
         //------------------for  edit   image--------------
     editIcon.addEventListener('click',(e)=>{
         let index = e.target.parentElement.parentElement.dataset.index;
-        
         document.getElementById("product-name").value = name;
         document.getElementById("product-price").value = price;
         document.getElementById("description").value = description;
@@ -62,6 +62,8 @@ function createNewRecord(name, price, currency, description, image,action) {
         document.getElementById("image").value = image;
         
         productList.splice(index,1)
+        displayProduct();
+        
         
         
     })
@@ -78,6 +80,7 @@ function createNewRecord(name, price, currency, description, image,action) {
     return tr;
 
 }
+
 
                 //  ------create table for (th)-------
 
@@ -113,31 +116,34 @@ function displayProduct() {
     }
     const  newTable = document.createElement("table");
     newTable.appendChild(createTableHeader());
-    let products = getProductFromLocalStorage("product-name");
-    for (let product of products) {
-        let row = createNewRecord(product.name, product.price, product.currency, product.description, product.image);
+    let productsFormInput = getProductFromLocalStorage("product-name");
+    
+    for (let index = 0; index < productsFormInput.length; index++) {
+        let product = productsFormInput[index];
+
+        let row = createNewRecord(index,product.name, product.price, product.currency, product.description, product.image);
         newTable.appendChild(row)
     }
     tableData.appendChild(newTable);
 
 }
 
-const result = document.querySelector("#result");
 const productName = document.querySelector("#product-name");
 const productPrice = document.querySelector("#product-price");
 const currency = document.querySelector("#currency");
 const description = document.querySelector("#description");
 const image = document.querySelector("#image");
+
 const button = document.querySelector("button");
 const tableData = document.querySelector(".table-data");
+
+
 
 let productList = JSON.parse(localStorage.getItem("product-name")) ?? [];
 
 button.addEventListener("click", (e) => {
     e.preventDefault();
-    if (productName.value === "") {
-        return;
-    }
+    
     let productObject = {name: productName.value, price: productPrice.value, currency: currency.value , description: description.value, image: image.value}
 
     productList.push(productObject);
@@ -157,4 +163,3 @@ button.addEventListener("click", (e) => {
 
 
 document.addEventListener("DOMContentLoaded", () => { displayProduct() })
-

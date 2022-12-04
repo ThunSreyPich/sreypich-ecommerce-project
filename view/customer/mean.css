@@ -3,11 +3,16 @@ body{
     padding: 0;
     height: 100vh;
 }
-/* .nav{
-    display: flex;
-    align-items: center;
-    background-color: #66b6e8;
-} */
+.card-body{
+    border: 1px solid rgb(233, 140, 140);
+    border-radius: 10px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    margin-right: 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 15px 15px 15px;
+    background-image: linear-gradient(rgb(158, 209, 227), rgb(62, 197, 234));
+    
+}
 .profile>img{
     width: 10%;
     border-radius: 50%;
@@ -29,18 +34,11 @@ ul{
     gap: 30px;
     text-transform: uppercase;
 }
-ul li a:hover{
-    background-color: #092231;
-    color: #e43b58;
-    transition: 0.2s;
-    padding: 10px;
-    border-right: 5px solid black;
-}
+
 a{
-    color: rgb(237, 153, 153);
+    color: rgb(12, 0, 0);
 }
 
-/* start header */
 * {
     margin: 0;
     padding: 0;
@@ -56,15 +54,7 @@ a{
     flex-wrap: wrap;
     gap: 15px;
 }
-.card {
-    flex-basis: 20%;
-    background: rgb(210, 20, 20);
-    padding: 10px;
-    box-shadow: rgba(232, 39, 39, 0.35) 10px 15px 15px;
-    border-radius: 8px;
-    margin-left: 15px;
-    margin-bottom: 30px;
-}
+
 
 
 .mt-5 {
@@ -76,8 +66,8 @@ a{
 }
 
 .price {
-    background: #c8ad18;
-    color: rgb(221, 41, 41);
+    background: #b4c352;
+    color: rgb(32, 5, 5);
     width: 50px;
     height: 10px;
     padding: 10px;
@@ -87,32 +77,30 @@ a{
     justify-content: center;
 }
 img{
-   
     width: 250px;
 }
 
 
 /* -------------------MENU BAR------------------- */
 h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    color: white;
-    background-color: rgb(226, 127, 127);
-    border-radius: 10px;
-    width: 20%;
-    margin: 15px;
-    margin-top: -10px;
+    width: 250%;
+    margin-left: -70px;
+    color: rgb(244, 229, 229);
+    background-image: linear-gradient(rgb(92, 46, 46), rgb(31, 187, 230));
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    padding: 7px;
+    margin-top: -60px;
 }
-
 .menu-bar{
     display: flex;
     justify-content: space-around;
-    background: rgb(232, 96, 132);
+    background-image: linear-gradient(rgb(243, 25, 25), rgb(89, 203, 235));
 }
 .logo img{
+    border-radius: 290px;
     width: 40%;
+    background: white;
     margin-top: -26px;
     margin-left: -30px;
 }
@@ -148,8 +136,6 @@ h1{
 }
 .seller-or-customer {
     margin-top: 30px;
-    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background: rgb(197, 81, 122); */
 }
 .seller-or-customer button {
    padding: 10px;
@@ -160,27 +146,60 @@ h1{
     text-decoration: none;
     color: black;
 }
-a:hover{
-    color: white;
-}
 .seller-or-customer :hover{
     background-color: orange;
+    color: white;
     border: none;
 }
 
-
-
-
-
-footer{
-    background-color: rgb(229, 179, 28);
+/* for dailog*/
+.detail_dialog_container{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: -400px;
-    margin: 0;
- }
-    footer a p {
-    margin-bottom: 20px; 
-    }
+    flex-direction: row;
+}
+.image_container img {
+    width: 30%;
+    margin-top: -210px;
+    margin-left: 60px;
+    border: 3px solid rgb(79, 208, 237);
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 15px 15px 15px;
+    border-radius: 10px;
+}
+h3  {
+   margin-left: 60px;
+  
+}
+#price,
+#name {
+    background: #b9d3e1;
+    width: 25%;
+    
+}
+
+#name{
+   margin-top:120px ;
+  
+}
+p{
+    margin-left: 490px;
+    margin-top: 150px;
+    width: 50%;
+}
+
+                /* Footer */
+
+footer .gmail{
+    margin: 0px;
+    background-image: linear-gradient(rgb(92, 46, 46), rgb(31, 187, 230));
+    width: 350%;
+    margin-left: 10px;
+    padding:15px;
+}
+
+.gmail a {
+    text-align: center;
+    display: flex;
+    margin-left: 520px;
+    color:white;
+}

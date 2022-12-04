@@ -8,31 +8,52 @@
 </head>
 
 <body>
+    <div  id="customer_contianer" class="customer_contianer" style="display:block ;">
 
-    <div class="menu-bar">
-        <div class="logo">
-            <img src="view/assets/images/ecommerce_logo.png" alt="">
+        <div class="menu-bar">
+            <div class="logo">
+                <img src="view/assets/images/ecommerce_logo.png" alt="">
+            </div>
+            <div class="button-search">
+                <input id="search" type="search" placeholder="search....">
+                <i class="material-icons">search</i>
+            </div>
+            <div class="seller-or-customer">
+                <button><a class="seller" href="view/seller/seller.html">Seller</a></button>
+                <button><a class="customer" href="index.html">Customer</a></button>
+            </div>
         </div>
-        <div class="button-search">
-            <input id="search" type="search" placeholder="search....">
-            <i class="material-icons">search</i>
+    
+        <div class="container  mt-5">
+            <h1 class="display-product">Display Product</h1>   
         </div>
-        <div class="seller-or-customer">
-            <button><a class="seller" href="view/seller/">Seller</a></button>
-            <button><a class="customer" href="">Customer</a></button>
-        </div>
-    </div>
-
-    <div class="container  mt-5">
-        <h1>Display Product</h1>
+        <div class="container" id="container"></div>
+        <footer>
+            <p class="gmail"><a href="">sreypich.thun@Ecommerce-Shop</a></p>
+        </footer> 
         
     </div>
-    <div class="container" id="container"></div>
+        <!-- ---------to display dialog------------------- -->
 
-    <footer>
-        <p>THUN SREYPICH-E-Commerce</p>
-        <p><a href="">sreypich.thun@student.passerellesnumeriques.org</a></p>
-    </footer> 
+    <div id="detail_dialog_container" style="display:none;" >
+        <div class="detail_product_paragraph">
+            <h3 id="name"></h3>
+            <h3 id="price"></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Ducimus fuga eligendi similique a, labore voluptatem <br> maxime alias quod sunt minus quibusdam velit soluta <br> suscipit est placeat</p>
+        </div>
+        <div class="image_container">
+            <img src="view/assets/images/necklace3.png" alt="">
+        </div>
+        <div class="grade">
+            <i class="material-icons">grade</i>
+            <i class="material-icons">grade</i>
+            <i class="material-icons">grade</i>
+            <i class="material-icons">grade</i>
+            <i class="material-icons">grade</i>
+        </div>
+        <button class="back"><a href="index.html">Back</a></button>
+        <button class="buy"><a href="">Buy Now</a></button>
+    </div>
     
 </body>
 
